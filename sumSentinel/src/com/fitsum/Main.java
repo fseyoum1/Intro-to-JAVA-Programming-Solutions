@@ -19,6 +19,12 @@ public class Main {
 
         System.out.println("Enter an integer, the input ends if it is 0 ");
         int value = scan.nextInt();
+        if (value == 0) {
+            System.out.println("No numbers are entered, except 0");
+            System.exit(0); // exits the program normally
+            // the status code 0 shows it is normal termination of the program
+            // while the status code 1 shows the termination is abnormal
+        }
 
         while(value != 0) {
             if (value > 0) {
